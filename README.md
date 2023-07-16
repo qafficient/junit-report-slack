@@ -27,5 +27,5 @@ JUnit test result xml file contains test suite information with total tests, fai
     testOutputPath: <JUnit test report xml full file path>
 ```
 ## License
-The scripts and documentation in this project are released under the MIT License
+The scripts and documentation in this project are released under the [MIT License](https://github.com/qafficient/junit-report-slack/blob/update-readme/LICENSE)
 
