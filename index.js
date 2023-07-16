@@ -9,9 +9,9 @@ const post_msg = async () => {
   const reportFilePath = core.getInput('testOutputPath');
   const testRunName = core.getInput('testRunName');
   const slacChannelkId = core.getInput('slackChannelId');
-
+  const token = core.getInput('slackToken');
   const web = new WebClient(
-    'xoxb-4897310620-2994421814596-9aMOzhqXThjEkFmTEEjSVpXl'
+    token
   );
   const msgData = await messageBuilder(reportFilePath, testRunName);
   const result = await web.chat.postMessage({
