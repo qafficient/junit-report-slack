@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="78.21795254099999" tests="9">
+  <testcase classname="Listing Details page" name="Verify User can open to listing details page from SRP" time="13.376395663">
+    <system-out><![CDATA[Given I am on consumer search result page.................................passed
+When I open any agent listing.............................................passed
+Then I should see listing details page....................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify User can open media gallery from listing details page" time="5.557870662">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+When I open media gallery.................................................passed
+Then I should see all the listing images..................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify Overview Section UI" time="3.3102937430000003">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+Then I verify Property info details.......................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify user can shortlist listing" time="2.392690324">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+When I shortlist the listing from navigation bar..........................passed
+Then I should see listing is shortlisted..................................passed
+When I unshortlist the listing from navigation bar........................passed
+Then I should see listing is unshortlisted................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify user can view more details about the listing" time="2.7433347480000005">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+When I fetch listing details from listing search api......................passed
+Then I verify more details section shows the data correctly...............passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify user can see agent phone number from ldp" time="32.937532913999995">
+    <failure type="TimeoutError" message="locator.waitFor: Timeout 30000ms exceeded.&#xA;=========================== logs ===========================&#xA;waiting for locator('[data-automation-id=\'password-fld\']').first() to be visible&#xA;============================================================"><![CDATA[locator.waitFor: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator('[data-automation-id=\'password-fld\']').first() to be visible
+============================================================
+    at PageElement.<anonymous> (/Users/DB/git-repos/marketplace-qaautomation/core/browser/page-element.ts:91:32)
+    at /Users/DB/git-repos/marketplace-qaautomation/core/browser/page-element.ts:8:71
+    at __awaiter (/Users/DB/git-repos/marketplace-qaautomation/core/browser/page-element.ts:4:12)
+    at PageElement.waitForVisible (/Users/DB/git-repos/marketplace-qaautomation/core/browser/page-element.ts:90:16)
+    at LoginModal.<anonymous> (/Users/DB/git-repos/marketplace-qaautomation/tests/lib/pages/consumer/Login/login-modal.ts:54:80)
+    at /Users/DB/git-repos/marketplace-qaautomation/tests/lib/pages/consumer/Login/login-modal.ts:8:71
+    at __awaiter (/Users/DB/git-repos/marketplace-qaautomation/tests/lib/pages/consumer/Login/login-modal.ts:4:12)
+    at LoginModal.setPassword (/Users/DB/git-repos/marketplace-qaautomation/tests/lib/pages/consumer/Login/login-modal.ts:53:16)
+    at LoginModal.<anonymous> (/Users/DB/git-repos/marketplace-qaautomation/tests/lib/pages/consumer/Login/login-modal.ts:70:24)
+    at fulfilled (/Users/DB/git-repos/marketplace-qaautomation/tests/lib/pages/consumer/Login/login-modal.ts:5:58)]]></failure>
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+And I login to consumer application with valid user.......................failed
+When I view agent phone number...........................................skipped
+Then I should see agnet phone number.....................................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify user navigate to agent profile page from contact agent section" time="13.607924205">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+And I login to consumer application with valid user.......................passed
+When I open agent profile page from contact section.......................passed
+Then I should navigate to agent profile page..............................passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify user can copy listing url" time="2.183843703">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+When I copy listing url link..............................................passed
+Then I should able to paste the listing url...............................passed]]></system-out>
+  </testcase>
+  <testcase classname="Listing Details page" name="Verify user can view Frequently Asked Questions about the property" time="2.108066579">
+    <system-out><![CDATA[Given I am on a random listing details page...............................passed
+When I scroll down to FAQ sections........................................passed
+Then I should see specific faq about the property.........................passed]]></system-out>
+  </testcase>
+</testsuite>
