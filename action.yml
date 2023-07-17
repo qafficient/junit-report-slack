@@ -1,0 +1,26 @@
+name: 'Junit report in Slack'
+description: 'Detailed JUnit Test Report sent to a Slack channel'
+branding:
+  icon: 'file-text'  
+  color: 'green'
+inputs:
+  testRunName:  # id of input
+    description: 'Name of the test run'
+    required: false
+  testOutputPath: 
+    description: 'Test Output Path'
+    required: true
+    default: 'missing test XML path from yml configuration'
+  slackChannelId:
+    description: 'Slack Conversation ID ie: C12355667'
+    required: true
+    default: 'missing slack channel ID from yml configuration'
+  slackToken:
+    description: 'Secret Slack Token'
+    required: true
+    default: 'missing slack token from yml configuration'
+#outputs:
+  #none
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
